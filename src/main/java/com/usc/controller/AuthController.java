@@ -47,8 +47,8 @@ public class AuthController {
 	
 	@GetMapping("/user")
 	public Customer getUserDetail(Authentication authentication) {
-//		System.out.println("userDetails");
-//		System.out.println("authentication "+ authentication.getName());
+		System.out.println("userDetails");
+		System.out.println("authentication "+ authentication.getName());
 		return customerDao.findByUsername(authentication.getName());
 //		return null;
 
